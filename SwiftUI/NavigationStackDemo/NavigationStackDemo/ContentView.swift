@@ -24,6 +24,7 @@ struct ContentView: View {
             }
             .navigationDestination(for: Screen.self, destination: destinationView)
         }
+        /// You can listen to url deeplinking with .onOpenURL
         .onOpenURL { url in
             navModel.handleDeepLink(url)
         }

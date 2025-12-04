@@ -16,7 +16,7 @@ class NavigationViewModel: ObservableObject {
      Command to  execute in terminal, while the simulator is turned on
      # xcrun simctl openurl booted "navigationstackdemo://profile/detail/42"
      */
-    // "navigationstackdemo://profile/detail/42"
+    /// Handles links for redirecting inside the app
     func handleDeepLink(_ url: URL) {
         let components = url.pathComponents.filter { $0 != "/" }
 
